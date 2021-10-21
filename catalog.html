@@ -3,46 +3,85 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>WildBerries</title>
+    <title>Wildberries</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#B20092">
-    <h1>Каталог</h1>
-    <div align=center>
-        <hr>
-        <a href="aboutPage.html">Информация</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="index.html">Главная</a>
-        <hr>
-    </div>
-    <center>
-        <p>
-        <table Cellpadding=1>
-            <tr align=center valign=top>
-                <td><a HREF="Секатор.html">Секатор</a></td>
-                <td><a HREF="Зонт.html">Зонт</a></td>
-                <td><a HREF="Носки.html">Носки</a></td>
-            </tr>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#"><h1>Wildberries</h1></a>
+                </div>
+                <nav>
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="aboutPage.html">О нас</a>
+                    <a class="nav__link active" href="#">Каталог</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-            <tr align=center valign=bottom>
-                <td><a HREF="Секатор.html">
-                        <IMG hspace=5 vspace=5 BORDER=0 SRC="Sekator.jpg" width=400>
-                    </a></td>
-                <td><a HREF="Зонт.html">
-                        <IMG hspace=5 vspace=5 BORDER=0 SRC="Zont.jpg" width=400>
-                    </a></td>
-                <td><a HREF="Носки.html">
-                        <IMG hspace=5 vspace=5 BORDER=0 SRC="Noski.jpg" width=400>
-                    </a></td>
-            </tr>
-        </table>
-        </p>
 
-    </center>
-    <div>
-        <hr>
-        <p>pyataev.nik@yandex.ru</p>
-    </div>
+        <div class="container">
+            <div class="products">
+
+                <div class="product">
+                    <h2 class="product__name">Зонт</h2>
+                    <div class="product__img">
+                        <img src="Zont.jpg" alt="">
+                    </div>
+                    <div class="product__disc">
+                        Зонт
+                    </div>
+                    <a href="Зонт.html"><div class="product__btn">
+                        К товару
+                    </div></a>
+                </div>
+
+                <div class="product">
+                    <h2 class="product__name">Секатор</h2>
+                    <div class="product__img">
+                        <img src="sekator.jpg" alt="">
+                    </div>
+                    <div class="product__disc">
+                        Секатор
+                    </div>
+                    <a href="Секатор.html"><div class="product__btn">
+                        К товару
+                    </div></a>
+                </div>
+
+                <div class="product">
+                    <h2 class="product__name">Носки</h2>
+                    <div class="product__img">
+                        <img src="Noski.jpg" alt="">
+                    </div>
+                    <div class="product__disc">
+                        Носки
+                    </div>
+                    <a href="Носки.html"><div class="product__btn">
+                        К товару
+                    </div></a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__contact">
+                        pyataev.nik@yandex.ru
+                    </div>
+                    <div class="footer__author">
+                        ©NikitaPyat
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
